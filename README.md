@@ -1,10 +1,10 @@
 <h1 align="center">
-    <img src="https://github.com/Atea-Studio/SimpleElevator/assets/51067790/741324cf-d3ee-4263-a063-21fd9ae4a377">
+    <img src="https://github.com/CptbeffHeart/SimpleElevator/assets/51067790/741324cf-d3ee-4263-a063-21fd9ae4a377">
 </h1>
 
 <p align="center">
   <a href="https://github.com/Atea-Studio/SimpleElevator/stargazers">
-    <img src="https://github.com/Atea-Studio/SimpleElevator/SimpleElevator">
+    <img src="https://img.shields.io/github/stars/Atea-Studio/SimpleElevator">
   </a>
   <a href="https://github.com/Atea-Studio/SimpleElevator/releases">
     <img src="https://img.shields.io/github/downloads/Atea-Studio/SimpleElevator/total.svg">
