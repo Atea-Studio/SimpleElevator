@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="https://github.com/CptbeffHeart/SimpleElevator/assets/51067790/741324cf-d3ee-4263-a063-21fd9ae4a377">
+    <img src="https://github.com/Atea-Studio/SimpleElevator/assets/51067790/741324cf-d3ee-4263-a063-21fd9ae4a377">
 </h1>
 
 <p align="center">
