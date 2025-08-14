@@ -1,12 +1,11 @@
 package com.expectale.registry
 
-import com.expectale.SimpleElevator
-import xyz.xenondevs.nova.addon.registry.ItemRegistry
+import com.expectale.SimpleElevator.registerItem
 import xyz.xenondevs.nova.initialize.Init
 import xyz.xenondevs.nova.initialize.InitStage
 
 @Init(stage = InitStage.PRE_PACK)
-object Items : ItemRegistry by SimpleElevator.registry {
+object Items {
     
     val BLACK_ELEVATOR = registerItem(Blocks.BLACK_ELEVATOR)
     val BLUE_ELEVATOR = registerItem(Blocks.BLUE_ELEVATOR)

@@ -26,7 +26,7 @@ To use them place two or more elevators in the same X and Z coordinates, to move
 # Obtain
 The white elevator can be take from the inventory `/nova items` on the `Misc` tab
 </br>
-The other colors can be obtain with the command `/nova give [player] simple_elevator:[color]_elevator`
+The other colors can be obtain with the command `/nova give [player] simple-elevator:[color]_elevator`
 
 ### Basic craft (White Elevator)
 <p align="center">

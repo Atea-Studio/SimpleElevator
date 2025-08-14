@@ -1,6 +1,11 @@
 package com.expectale.block
 
 import com.destroystokyo.paper.event.player.PlayerJumpEvent
+import com.expectale.block.Elevator.crouch
+import com.expectale.block.Elevator.isBlockElevator
+import com.expectale.block.Elevator.jump
+import com.expectale.block.Elevator.spaceForPlayer
+import com.expectale.block.Elevator.tpPlayer
 import com.expectale.registry.Blocks
 import org.bukkit.Axis
 import org.bukkit.Location
@@ -10,7 +15,6 @@ import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.player.PlayerToggleSneakEvent
 import xyz.xenondevs.nova.initialize.Init
-import xyz.xenondevs.nova.initialize.InitFun
 import xyz.xenondevs.nova.initialize.InitStage
 import xyz.xenondevs.nova.util.advance
 import xyz.xenondevs.nova.util.playSoundNearby
@@ -40,8 +44,7 @@ val ELEVATORS = listOf(
 @Init(stage = InitStage.POST_WORLD)
 object Elevator: Listener {
     
-    @InitFun
-    private fun init() {
+    init {
         registerEvents()
     }
 

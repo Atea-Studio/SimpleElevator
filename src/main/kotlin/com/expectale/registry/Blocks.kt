@@ -1,11 +1,10 @@
 package com.expectale.registry
 
-import com.expectale.SimpleElevator
+import com.expectale.SimpleElevator.block
 import org.bukkit.Material
-import xyz.xenondevs.nova.addon.registry.BlockRegistry
 import xyz.xenondevs.nova.initialize.Init
 import xyz.xenondevs.nova.initialize.InitStage
-import xyz.xenondevs.nova.resources.layout.block.BackingStateCategory
+import xyz.xenondevs.nova.resources.builder.layout.block.BackingStateCategory
 import xyz.xenondevs.nova.world.block.NovaBlock
 import xyz.xenondevs.nova.world.block.behavior.BlockSounds
 import xyz.xenondevs.nova.world.block.behavior.Breakable
@@ -14,11 +13,11 @@ import xyz.xenondevs.nova.world.item.tool.VanillaToolCategories
 import xyz.xenondevs.nova.world.item.tool.VanillaToolTiers
 
 @Init(stage = InitStage.PRE_PACK)
-object Blocks : BlockRegistry by SimpleElevator.registry {
+object Blocks {
     
     private val ELEVATOR = Breakable(
         2.0,
-        VanillaToolCategories.PICKAXE,
+        setOf(VanillaToolCategories.PICKAXE),
         VanillaToolTiers.STONE,
         true,
         Material.STONE)
@@ -44,8 +43,6 @@ object Blocks : BlockRegistry by SimpleElevator.registry {
         name: String
     ): NovaBlock = block(name) {
         behaviors(ELEVATOR, BlockSounds(SoundGroup.STONE))
-        models {
-            stateBacked(BackingStateCategory.MUSHROOM_BLOCK, BackingStateCategory.NOTE_BLOCK)
-        }
+        stateBacked(BackingStateCategory.MUSHROOM_BLOCK, BackingStateCategory.NOTE_BLOCK)
     }
 }
