@@ -3,11 +3,11 @@
 </h1>
 
 <p align="center">
-  <a href="https://github.com/CptBeffHeart/SimpleElevator/stargazers">
-    <img src="https://img.shields.io/github/stars/CptBeffHeart/SimpleElevator">
+  <a href="https://github.com/Atea-Studio/SimpleElevator/stargazers">
+    <img src="https://github.com/Atea-Studio/SimpleElevator/SimpleElevator">
   </a>
-  <a href="https://github.com/CptbeffHeart/SimpleElevator/releases">
-    <img src="https://img.shields.io/github/downloads/CptbeffHeart/SimpleElevator/total.svg">
+  <a href="https://github.com/Atea-Studio/SimpleElevator/releases">
+    <img src="https://img.shields.io/github/downloads/Atea-Studio/SimpleElevator/total.svg">
   </a>
 </p>
 
